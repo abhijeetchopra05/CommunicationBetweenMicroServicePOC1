@@ -1,0 +1,17 @@
+
+profiles:
+  active: dev
+server:
+  port: 8002
+
+spring:
+  application:
+    name: PatientService
+  cloud:
+    consul:
+      discovery:
+        healthCheckInterval: 15s
+
+management:
+  security:
+    enabled: false

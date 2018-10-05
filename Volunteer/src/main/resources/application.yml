@@ -1,0 +1,17 @@
+
+profiles:
+  active: dev
+server:
+  port: 8001
+
+spring:
+  application:
+    name: VolunteerService
+  cloud:
+    consul:
+      discovery:
+        healthCheckInterval: 15s
+
+management:
+  security:
+    enabled: false
